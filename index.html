@@ -41,15 +41,28 @@
             border-bottom: 1px solid var(--charcoal);
         }
 
+        .logo-container {
+            display: flex;
+            flex-direction: column;
+        }
+
         .logo {
             font-size: 1.5rem;
             font-weight: 700;
             letter-spacing: 1px;
             color: var(--text-main);
+            text-decoration: none;
         }
 
         .logo span {
             color: var(--emerald-green);
+        }
+
+        .logo-sub {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
         }
 
         /* Hero Section */
@@ -182,7 +195,10 @@
 
     <div class="container">
         <nav>
-            <div class="logo">Modu<span>lease</span></div>
+            <div class="logo-container">
+                <a href="#" class="logo">Modu<span>lease</span></a>
+                <span class="logo-sub">Infrastructure EaaS</span>
+            </div>
         </nav>
 
         <section class="hero">
@@ -191,7 +207,6 @@
         </section>
 
         <section class="hero-image">
-            <!-- Professional, moody image of an empty modern office space from Unsplash -->
             <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Premium empty flex workspace with modern desks and chairs">
         </section>
 
@@ -219,7 +234,7 @@
         <section class="cta-section">
             <h2>Ready to scale smarter?</h2>
             <p style="color: var(--text-muted); margin-top: 1rem;">Whether you are an operator looking to scale, or a debt fund seeking high-yield asset-backed structures.</p>
-            <a href="mailto:founder@modulease.site" class="cta-button">Contact Our Team</a>
+            <a href="mailto:founder@modulease.site?subject=Inquiry%20regarding%20Modulease%20Master%20Facility" class="cta-button">Contact Our Team</a>
         </section>
 
         <footer>
