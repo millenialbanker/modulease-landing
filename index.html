@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulease | Equipment-as-a-Service for Flex Workspaces</title>
+    <style>
+        :root {
+            --slate-black: #0b0f19;
+            --charcoal: #1e293b;
+            --emerald-green: #10b981;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        body {
+            background-color: var(--slate-black);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Navigation */
+        nav {
+            padding: 2rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--charcoal);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: var(--text-main);
+        }
+
+        .logo span {
+            color: var(--emerald-green);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 5rem 0 3rem 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero h1 span {
+            color: var(--emerald-green);
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto 3rem auto;
+        }
+
+        /* Hero Image Showcase */
+        .hero-image {
+            width: 100%;
+            margin-bottom: 4rem;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 12px;
+            opacity: 0.9;
+            border: 1px solid var(--charcoal);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Value Proposition */
+        .pitch-box {
+            background-color: var(--charcoal);
+            padding: 3rem;
+            border-radius: 8px;
+            margin-bottom: 4rem;
+            border-left: 4px solid var(--emerald-green);
+        }
+
+        .pitch-box h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--emerald-green);
+        }
+
+        .pitch-box p {
+            margin-bottom: 1rem;
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .feature-item {
+            padding: 1.5rem;
+            background-color: var(--charcoal);
+            border-radius: 8px;
+        }
+        
+        .feature-item h3 {
+            color: var(--text-main);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .feature-item p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            text-align: center;
+            padding: 4rem 0;
+            border-top: 1px solid var(--charcoal);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--emerald-green);
+            color: var(--slate-black);
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+            margin-top: 1.5rem;
+        }
+
+        .cta-button:hover {
+            background-color: #059669;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--charcoal);
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .hero p { font-size: 1.1rem; }
+            .hero-image img { height: 250px; }
+            .pitch-box { padding: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <div class="logo">Modu<span>lease</span></div>
+        </nav>
+
+        <section class="hero">
+            <h1>Scale Your Workspace.<br><span>Protect Your CapEx.</span></h1>
+            <p>India’s premier Equipment-as-a-Service (EaaS) platform exclusively designed for the mid-market flex-workspace and coworking sector.</p>
+        </section>
+
+        <section class="hero-image">
+            <!-- Professional, moody image of an empty modern office space from Unsplash -->
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Premium empty flex workspace with modern desks and chairs">
+        </section>
+
+        <section class="pitch-box">
+            <h2>Stop locking equity in depreciating assets.</h2>
+            <p>We partner with rapidly scaling flex operators to convert heavy day-zero infrastructure CapEx into agile, balance-sheet-friendly operating expenses.</p>
+            <p>Our strictly structured deployment models allow CFOs to protect their debt-to-equity ratios and preserve growth equity for core real estate acquisition, without the drag of rigid upfront costs.</p>
+        </section>
+
+        <section class="features">
+            <div class="feature-item">
+                <h3>Asset-Light Scaling</h3>
+                <p>Proprietary contract structures designed to keep heavy infrastructure off your balance sheet.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Predictable Cash Flows</h3>
+                <p>Eliminate unpredictable infrastructure expenses and maintenance spikes with a single, streamlined monthly operating fee.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Institutional Security</h3>
+                <p>Built with robust risk-mitigation architecture to provide highly secure, yield-generating structures for our debt partners.</p>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>Ready to scale smarter?</h2>
+            <p style="color: var(--text-muted); margin-top: 1rem;">Whether you are an operator looking to scale, or a debt fund seeking high-yield asset-backed structures.</p>
+            <a href="mailto:founder@modulease.site" class="cta-button">Contact Our Team</a>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Modulease. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
